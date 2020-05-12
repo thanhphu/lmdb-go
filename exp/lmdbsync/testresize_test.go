@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/bmatsuo/lmdb-go/lmdb"
+	"github.com/thanhphu/lmdb-go/lmdb"
 )
 
 func TestResize(t *testing.T) {
