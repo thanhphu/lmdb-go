@@ -6714,7 +6714,6 @@ more:
 			} else {
 				/* Data is on sub-page */
 				fp = olddata.mv_data;
-				
 				do {
 					if (!(mc->mc_db->md_flags & MDB_DUPFIXED)) {
 						offset = EVEN(NODESIZE + sizeof(indx_t) +
@@ -6726,7 +6725,7 @@ more:
 						offset *= 4; /* space for 4 more */
 						break;
 					}
-				} while (1);
+				} while (0);
 
 				if (flags & MDB_CURRENT) {
 					fp->mp_flags |= P_DIRTY;
